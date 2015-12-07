@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Ridiculous Violence!</h1>
+
+<ul>{% for object in reports %}
+<li><a href="{{ object.get_absolute_url }}">{{ object.name }}</a></li>
+{% endfor %}</ul>
+
+
+{% endblock %}
