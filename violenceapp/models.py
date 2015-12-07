@@ -1,16 +1,33 @@
 from django.db import models
 
+class FoodRelated(models.Model):
+    person = models.ManyToManyField(Person)
+    slug_name = models.CharField(max_length=300)
+    def  __unicode__(self):
+        return self.slug_name
+    class Meta:
+        ordering = ('idk',)
+
+class SocialMediaMassacres(models.Model):
+
+class Florida(models.Model):
+
+class Crimes
+    
 class Person(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
+    state_name = models.CharField(max_length=50)
     name_slug = models.SlugField()
     age = models.IntegerField()
     class Meta:
         verbose_name = "Person"
     def __unicode__(self):
-        return (self.first_name, self.last_name, self.age)
+        return (self.first_name, self.last_name, self.state_name, self.age)
 
 
+
+#code below just attempting to figure this out#
 class Incident(models.Model):
     crime_date = models.DateField()
     
@@ -21,7 +38,7 @@ class State(models.Model):
 class Story
     headline = 
     blurb = 
-#not sure what this is#
+
 class Incident(models.Model):
     first_name
 
