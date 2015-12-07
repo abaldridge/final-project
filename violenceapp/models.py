@@ -8,7 +8,24 @@ class Person(models.Model):
     class Meta:
         verbose_name = "Person"
     def __unicode__(self):
-        return self.name
+        return (self.first_name, self.last_name, self.age)
+
+
+class Incident(models.Model):
+    crime_date = models.DateField()
+    
+class State(models.Model):
+    state_name = models.CharField(max_length=50)
+    name_slug = 
+
+class Story
+    headline = 
+    blurb = 
+#not sure what this is#
+class Incident(models.Model):
+    first_name
+
+#old code to look at#
 
 class Florida(models.Model):
     name = models.CharField(max_length=255)
@@ -20,14 +37,12 @@ class Florida(models.Model):
     def get_absolute_url (self):
         return "reports/%s/
 
-class Incident(models.Model):
-    crime_date = models.DateField()
-    
-class State(models.Model):
-    name
-    name_slug
-
-class Story
-    headline = 
-    blurb = 
+class Report(models.Model):
+    lake = models.ForeignKey(Lake)
+    date = models.DateField()
+    alert = models.BooleanField()
+    toxin = models.FloatField()
+    ecoli = models.IntegerField()
+    def __unicode__(self):
+        return "%s on %s" (self.lake.name, self.date)
     
