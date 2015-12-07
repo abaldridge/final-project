@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from violenceapp import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', views.homepage),
+    url(r'^reports/(?P<pk>\d+)/$', views.reportdetail),
 ]
+
+#(?P<page_slug>[\w-]+) use that for tags instead of the pk example above

@@ -5,32 +5,32 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "violence.settings")
 
 from django.conf import settings
 
-from violenceapp.models import ModelName, AnotherModel, ThirdModel
+from violenceapp.models import State, Report
 
 from django.template.defaultfilters import slugify, urlize
 
 django.setup()
 
-reader = csv.reader(open("violencedata.csv", "rU"), dialect=csv.excel)
+reader = csv.reader(open("ViolenceData.csv", "rU"), dialect=csv.excel)
 
 reader.next()
 
 for row in reader:
 
-    textexample = row[0]
+    nm = row[0]
 
-    integerexample = int(row[1])
+    ag = int(row[1])
 
-    floatexample = float(row[2])
+    st = row[2]
 
-    dateparseexample = time.strptime(row[3], "%m/%d/%Y %H:%M")
+    stat, statcreated = State.objects.get_or_create(state_name=st, state_slug=slugify(st))
+
+    dateparseexample = time.strptime(row[3], "%m/%d/%y")
 
     dateexample = datetime.datetime(dateparseexample.tm_year, dateparseexample.tm_mon, dateparseexample.tm_mday)
 
-    modnam, modnamcreated = ModelName.objects.get_or_create(name=row[4], attribute=row[5])
+    rpt, rptcreated = Report.objects.get_or_create(name=nm, age=ag, state=stat, report_date=dateexample, description=row[4])
 
-    anothermod, anothermodcreated = AnotherModel.objects.get_or_create(model=modnam, other_attribute=row[7])
-
-    print anothermod
+    print rpt
 
 
