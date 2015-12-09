@@ -22,3 +22,5 @@ urlpatterns = [
     url(r'^$', views.homepage),
     url(r'^reports/(?P<pk>\d+)/$', views.reportdetail),
 ]
+
+#(?P<page_slug>[\w-]+) use that for tags instead of the pk example above
