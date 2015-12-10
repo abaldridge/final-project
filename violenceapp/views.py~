@@ -11,3 +11,5 @@ def reportdetail(request, pk):
     report = Report.objects.get(id=pk)
     context = {"report": report}
     return render(request, 'reportdetail.html', context)   
+
+

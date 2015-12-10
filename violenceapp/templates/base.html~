@@ -36,7 +36,7 @@
     <![endif]-->
 
 </head>
-
+<br>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
@@ -62,7 +62,7 @@
                         <a class="page-scroll" href="#about">Bad Day?</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Data</a>
+                        <a class="page-scroll" href="#download">Awfully Funny</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Categories</a>
@@ -82,7 +82,7 @@
                     <div class="col-md-8 col-md-offset-2">
 {% block content %}
                         <h1 class="brand-heading">Culture of Rage</h1>
-                        <p class="intro-text">A comprehensive list of brutal murders and assaults in the United States for extremely mundane reasons.<br>maybe add to this later</p>
+                        <p class="intro-text">A comprehensive list of brutal murders and assaults in the United States for extremely mundane reasons.
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -98,7 +98,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>So your life sucks huh?</h2>
-                <p> Lost your job. Failed your finals. Gained some weight. Broke as hell. Dog died. Got mono. Depression. Wrecked your car. Legal troubles. Hate your job. Got hacked. Pregnant. Lost your wallet. Addiction. Hate yourself. Whatever your current struggle is, sometimes looking at the worse helps deal with the bad. Dark humor is proven to be an effective coping-mechanism for many, so don't feel guilty. Dive into the ridiculous reports and reasons every day people were attacked.    <a href="http://startbootstrap.com/template-overviews/grayscale/">this is supposed to link to tag page</a>. </p>
+                <p> Lost your job. Failed your finals. Gained some weight. Broke as hell. Dog died. Got mono. Depression. Wrecked your car. Legal troubles. Hate your job. Got hacked. Pregnant. Lost your wallet. Addiction. Hate yourself. Whatever your current struggle is, sometimes looking at the worse helps deal with the bad. Dark humor is proven to be an effective coping-mechanism for many, so don't feel guilty. Dive into the reports and explore the ridiculous reasons why people were attacked.</a>. </p>
 
             </div>
         </div>
@@ -109,8 +109,8 @@
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Absurdly ridiculous attacks</h2>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Random</a>
+                    <h2>To find out more about the psychological connection between humor and tradgedy, click below.</h2>
+                    <a href="http://www.psychologicalscience.org/index.php/publications/observer/2013/may-june-13/awfully-funny.html" class="btn btn-default btn-lg">Awfully Funny</a>
                 </div>
             </div>
         </div>
@@ -121,18 +121,17 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2></h2>
-                <p>Click on a link below.</p>
-                <p><a href="http://www.psychologicalscience.org/index.php/publications/observer/2013/may-june-13/awfully-funny.html">More info on the psychological connection between humor and tragedy.</a>
-                </p>
+                <p>Explore a category below.</p>
+          
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Social Media Massacres</span></a>
+                        <a href="/tag/social" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Social Media Massacres</span></a>
                     </li>
                     <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Crimes of Passion</span></a>
+                        <a href="/tag/crimes-passion" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Crimes of Passion</span></a>
                     </li>
  		    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Kool-Aid Killers</span></a>
+                        <a href="/tag/koolaid" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Kool-Aid Killers</span></a>
                     </li>
  			<li>
                         <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Florida</span></a>

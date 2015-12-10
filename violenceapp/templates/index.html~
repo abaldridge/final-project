@@ -3,6 +3,8 @@
 {% block content %}
 
 <h1>Culture of Rage</h1>
+<br>
+<br>
 <p> A comprehensive list of brutal murders and assaults in the U.S. for extremely mundane reasons. </p>
 
 <ul>{% for object in reports %}

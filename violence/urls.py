@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.homepage),
     url(r'^reports/(?P<pk>\d+)/$', views.reportdetail),
+    url(r'tag/(?P<tag_slug>[\w-]+)$', views.tagdetail),
 ]
 
-#(?P<page_slug>[\w-]+) use that for tags instead of the pk example above
+

@@ -10,6 +10,10 @@ def homepage(request):
 def reportdetail(request, pk):
     report = Report.objects.get(id=pk)
     context = {"report": report}
-    return render(request, 'reportdetail.html', context)   
+    return render(request, 'reportdetail.html', context) 
 
-
+def tagdetail(request, tag_slug):
+    tag = Tags.objects.get(tag_slug=tag_slug)
+    reports = Report.objects.filter(tags=tag)
+    context = {"tag": tag, "reports": reports}
+    return render(request, 'tagdetail.html', context) 

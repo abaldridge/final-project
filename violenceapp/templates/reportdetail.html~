@@ -1,8 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+<ul>
+{% for choice in choices %}
+    <li> {{ choice }} </li>
+{% endfor %}
+</ul>
 <h1>{{ report.name }}</h1>
 <p>{{ report.description }}</p>
+<p>Tags: {% for tag in report.tags.all %}<a href="{{ tag.get_absolute_url }}">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</p>
+
 
 {% endblock %}

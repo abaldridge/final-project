@@ -11,6 +11,8 @@ class Tags(models.Model):
     tag_slug = models.SlugField()
     def __unicode__(self):
         return self.tag
+    def get_absolute_url(self):
+        return "/tag/%s" % self.tag_slug
     
 class Report(models.Model):
     name = models.CharField(max_length=50)
@@ -22,4 +24,4 @@ class Report(models.Model):
     def __unicode__(self):
         return self.name
     def get_absolute_url(self):
-        return "reports/%i" % self.id
+        return "/reports/%i" % self.id
