@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br>
+<h1>{{ tag }}</h1>
+<br>
+<p> A comprehensive list of brutal murders and assaults in the U.S. for extremely mundane reasons related to {{ tag }}. </p>
+
+<ul>{% for object in reports %}
+<li><a href="{{ object.get_absolute_url }}">{{ object.name }}</a></li>
+{% endfor %}</ul>
+
+
+{% endblock %}
